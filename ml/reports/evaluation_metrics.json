@@ -1,0 +1,57 @@
+{
+  "model_artifact": "ml/artifacts/image_quality_model.pkl",
+  "evaluation_dataset": "ml/data/test_split.csv",
+  "sample_count": 80,
+  "overall_accuracy": 0.95,
+  "macro_precision": 0.9545,
+  "macro_recall": 0.95,
+  "macro_f1_score": 0.9499,
+  "roc_auc_score": 0.9975,
+  "classes": [
+    "ready",
+    "retake"
+  ],
+  "per_class": {
+    "ready": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.9474,
+      "support": 40
+    },
+    "retake": {
+      "precision": 0.9091,
+      "recall": 1.0,
+      "f1_score": 0.9524,
+      "support": 40
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "ready",
+      "retake"
+    ],
+    "matrix": [
+      [
+        36,
+        4
+      ],
+      [
+        0,
+        40
+      ]
+    ]
+  },
+  "feature_importances": {
+    "width": 0.03621290743828122,
+    "height": 0.05268429733968793,
+    "aspect_ratio": 0.00709920084368834,
+    "resolution_mp": 0.07708468551200173,
+    "brightness_mean": 0.11981258892724977,
+    "brightness_std": 0.05194394141433241,
+    "contrast_rms": 0.06827996096683,
+    "blur_score": 0.05584955874194168,
+    "edge_density": 0.25705052384324817,
+    "color_variance": 0.12830511211150455,
+    "subject_framing_score": 0.1456772228612342
+  }
+}
